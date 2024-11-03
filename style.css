@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+:root {
+  --primary-color: #decaac;
+  --secondary-color: #0067a4;
+  --color: #fff;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Inter", serif;
+  background-color: var(--primary-color);
+  height: 2000px;
+}
+
+.retangle {
+  top: 0;
+  right: 0;
+}
+
+/* Navbar */
+.navbar {
+  transition: all 0.07s linear;
+}
+
+.navbar-glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-brand img {
+  width: 45px;
+}
+
+/* Navbar */
+
+/* hero section */
+.hero {
+  padding: 50px 0 0;
+  margin-top: 50px;
+}
+
+.tx-primary {
+  font-family: "Poppins";
+}
+
+.tx-primary h1 {
+  font-size: 110px;
+  line-height: 97px;
+}
+
+.img-box-hero img {
+  width: 193px;
+  height: 218px;
+}
+
+.btn-hero .btn {
+  border-radius: 30px;
+  font-size: 1.25rem;
+  padding: 10px 24px;
+}
+
+.p-hero {
+  padding: 0 10px 30px;
+}
+
+.p-hero p {
+  line-height: 30px;
+}
+
+.img-box-hero img {
+  box-shadow: 12px 12px 44px 0px rgba(0, 0, 0, 1);
+}
+
+.img-hero {
+  bottom: 0;
+  right: 0;
+}
+
+.img-hero img {
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  box-shadow: 12px 12px 44px 0px rgba(0, 0, 0, 1);
+}
+/* hero section */
+
+/* about */
+.about {
+  padding: 150px 0;
+}
+
+.retangle-about {
+  width: 80%;
+  height: 440px;
+  background-color: var(--secondary-color);
+  top: 1;
+  right: 0;
+}
+
+.img-about img {
+  width: 250px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  box-shadow: 12px 12px 44px 0px rgba(0, 0, 0, 1);
+}
+
+.p-about {
+  font-size: 1.25rem;
+}
+
+.p-about p {
+  line-height: 30px;
+}
+
+.numberplus {
+  margin: 30px 0;
+}
+
+.numbers h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.numbers p {
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+.btn-about .btn {
+  font-size: 1rem;
+  border-radius: 30px;
+  padding: 10px 24px;
+}
+
+/* about */
+
+/* media */
+@media (max-width: 767.98px) {
+  .navbar {
+    transition: all 0.07s linear;
+  }
+
+  .navbar-brand img {
+    width: 35px;
+  }
+
+  .retangle-about {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+  }
+
+  .retangle img {
+    width: 205px;
+    height: 284px;
+  }
+
+  .about {
+    margin-top: 70px;
+    padding: 20px 0;
+  }
+
+  .img-about img {
+    width: 200px;
+  }
+
+  .tx-primary h1 {
+    font-size: 65px;
+    line-height: 55px;
+  }
+
+  .img-box-hero img {
+    width: 113px;
+    height: 136px;
+  }
+
+  .btn-hero .btn {
+    border-radius: 30px;
+    font-size: 0.9rem;
+    padding: 10px 24px;
+  }
+
+  .btn-about .btn {
+    border-radius: 30px;
+    font-size: 0.9rem;
+    padding: 10px 24px;
+  }
+
+  .p-about {
+    font-size: 1.1rem;
+  }
+
+  .p-about p {
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    transition: all 0.07s linear;
+  }
+
+  .navbar-nav {
+    color: black;
+  }
+
+  .navbar-glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .navbar-brand img {
+    width: 100%;
+  }
+
+  .retangle-about {
+    width: 80%;
+    height: 650px;
+  }
+
+  .tx-primary h1 {
+    font-size: 152px;
+    line-height: 97px;
+  }
+
+  .hero {
+    margin-top: 100px;
+  }
+
+  .btn-hero {
+    padding: 70px 0 30px;
+  }
+
+  /* about */
+  .img-about img {
+    width: 413px;
+    height: 573px;
+  }
+
+  .p-about {
+    font-size: 1.5rem;
+  }
+
+  .p-about p {
+    line-height: 35px;
+  }
+
+  .numberplus {
+    margin: 50px 0;
+  }
+
+  .numbers h3 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .numbers p {
+    font-size: 18px;
+    margin-top: -10px;
+  }
+
+  .btn-about .btn {
+    font-size: 1.25rem;
+  }
+}
